@@ -1,0 +1,215 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee     http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+  <display-name>在线选课系统</display-name>
+
+  <servlet>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <servlet-class>org.jarcem.Servlets.UserLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <url-pattern>/userLogin</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>MainPageServlet</servlet-name>
+    <servlet-class>org.jarcem.Servlets.MainPageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MainPageServlet</servlet-name>
+    <url-pattern>/mainPage</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UserInfoServlet</servlet-name>
+    <servlet-class>org.jarcem.Servlets.UserInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserInfoServlet</servlet-name>
+    <url-pattern>/userInfo</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>IndexServlet</servlet-name>
+    <servlet-class>org.jarcem.Servlets.IndexServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IndexServlet</servlet-name>
+    <url-pattern>/indexControl</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+        <servlet-name>QueryUserInfoServlet</servlet-name>
+        <servlet-class>org.jarcem.Servlets.QueryUserInfoServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>QueryUserInfoServlet</servlet-name>
+        <url-pattern>/queryUser</url-pattern>
+    </servlet-mapping>
+
+  <servlet>
+    <servlet-name>EditUserInfoServlet</servlet-name>
+    <servlet-class>org.jarcem.Servlets.EditUserInfoServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>EditUserInfoServlet</servlet-name>
+    <url-pattern>/editUserInfo</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AddUserServlet</servlet-name>
+    <servlet-class>org.jarcem.Servlets.AddUserServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AddUserServlet</servlet-name>
+    <url-pattern>/addUser</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteUserServlet</servlet-name>
+    <servlet-class>org.jarcem.Servlets.DeleteUserServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DeleteUserServlet</servlet-name>
+    <url-pattern>/delUser</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>QueryClassServlet</servlet-name>
+    <servlet-class>org.jarcem.Servlets.QueryClassServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>QueryClassServlet</servlet-name>
+    <url-pattern>/queryClass</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteClassServlet</servlet-name>
+    <servlet-class>org.jarcem.Servlets.DeleteClassServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DeleteClassServlet</servlet-name>
+    <url-pattern>/delClass</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AddNewClassServlet</servlet-name>
+    <servlet-class>org.jarcem.Servlets.AddNewClassServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AddNewClassServlet</servlet-name>
+    <url-pattern>/addNewClass</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>EditClassServlet</servlet-name>
+    <servlet-class>org.jarcem.Servlets.EditClassServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>EditClassServlet</servlet-name>
+    <url-pattern>/editClass</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ExamineClassServlet</servlet-name>
+    <servlet-class>org.jarcem.Servlets.ExamineClassServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ExamineClassServlet</servlet-name>
+    <url-pattern>/examineClass</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AuditClassServlet</servlet-name>
+        <servlet-class>org.jarcem.Servlets.AuditClassServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AuditClassServlet</servlet-name>
+        <url-pattern>/auditClass</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ScoreManageServlet</servlet-name>
+        <servlet-class>org.jarcem.Servlets.ScoreManageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ScoreManageServlet</servlet-name>
+        <url-pattern>/scoreManage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditScoreServlet</servlet-name>
+        <servlet-class>org.jarcem.Servlets.EditScoreServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EditScoreServlet</servlet-name>
+        <url-pattern>/editScore</url-pattern>
+    </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ClassScoreServlet</servlet-name>
+    <servlet-class>org.jarcem.Servlets.ClassScoreServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ClassScoreServlet</servlet-name>
+    <url-pattern>/classScore</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ApplyClassServlet</servlet-name>
+        <servlet-class>org.jarcem.Servlets.ApplyClassServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ApplyClassServlet</servlet-name>
+        <url-pattern>/applyClass</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>QueryStudentInfoServlet</servlet-name>
+        <servlet-class>org.jarcem.Servlets.QueryStudentInfoServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>QueryStudentInfoServlet</servlet-name>
+        <url-pattern>/queryStudentInfo</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TeaScoreManageServlet</servlet-name>
+        <servlet-class>org.jarcem.Servlets.TeacherScoreManageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TeaScoreManageServlet</servlet-name>
+        <url-pattern>/teaScoreManage</url-pattern>
+    </servlet-mapping>
+
+
+  <welcome-file-list>
+    <welcome-file>indexControl</welcome-file>
+  </welcome-file-list>
+
+  <session-config>
+    <session-timeout>45</session-timeout>
+  </session-config>
+</web-app>
