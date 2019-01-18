@@ -4,9 +4,9 @@ import java.sql.*;
 
 public class DBUtil {
     private static String driver_class_name = "com.mysql.jdbc.Driver";
-    private static String connection_url = "jdbc:mysql://198.13.34.88:3306/ConstructionDB";
+    private static String connection_url = "jdbc:mysql://.../ConstructionDB";
     private static String user_name = "tokyosqlserver";
-    private static String password = "123QweAsdZxc";
+    private static String password = "";
 
     static {
         try {
